@@ -13,8 +13,6 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timerIsRunning = true;
-        GameObject timerGO = GameObject.Find("Timer");
-        timeText = timerGO.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -25,10 +23,11 @@ public class Timer : MonoBehaviour
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
+                DisplayTime(timeRemaining);
             }
             else
             {
-                Debug.Log("Time has run out!");
+                print("Time Has Run Out");
                 timeRemaining = 0;
                 timerIsRunning = false;
             }
@@ -42,6 +41,6 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
-        timeText.text = string.Format("{0:00}:{10:00}", minutes, seconds);
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

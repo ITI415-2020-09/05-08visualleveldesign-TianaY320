@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &2921464969296924079
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240264575842521416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1024168
+  m_Center: {x: 0.0036770701, y: 0.7879247, z: 0.18635759}
 --- !u!1 &3998908645522378682
 GameObject:
   m_ObjectHideFlags: 0
@@ -16,7 +29,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2471145642463008919
 Transform:
   m_ObjectHideFlags: 0
@@ -53,6 +66,10 @@ PrefabInstance:
     - target: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
       propertyPath: m_Name
       value: CowBlW Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+      propertyPath: m_TagString
+      value: Cow
       objectReference: {fileID: 0}
     - target: {fileID: 4054502789990554, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -100,6 +117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+--- !u!1 &1240264575842521416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+  m_PrefabInstance: {fileID: 1239295592862941766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1242073527755229916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4054502789990554, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}

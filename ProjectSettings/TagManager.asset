@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Water
+  - Cow
+  - Fish
+  - Pig
+  - Chicken
   layers:
   - Default
   - TransparentFX

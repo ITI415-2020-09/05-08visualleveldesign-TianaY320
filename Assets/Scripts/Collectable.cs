@@ -5,16 +5,10 @@ using UnityEngine.UI;
 
 public class Collectable : MonoBehaviour
 {
-   
+
     [Header("Set Dynamically")]
     public Text scoreGT;
     public GameObject selectHalo;
-
-    [Header("Set in Inspector")]
-    public GameObject prefabFish;
-    public GameObject prefabCow;
-    public GameObject prefabPig;
-    public GameObject prefabChicken;
 
     void Awake()
     {
@@ -39,16 +33,38 @@ public class Collectable : MonoBehaviour
         scoreGT.text = "0";
     }
 
-    void OnMouseOver()
+    void OnCollisionEnter(Collision coll)
     {
-        if (Input.GetMouseButtonDown(0))
+        GameObject collidedWith = coll.gameObject;
+        if (collidedWith.tag == "Cow")
         {
-            Destroy(this.gameObject);
+            Destroy(collidedWith); // Destroy what we hit
             int score = int.Parse(scoreGT.text);
             score += 1;
             scoreGT.text = score.ToString();
         }
-    }
 
- 
+        if (collidedWith.tag == "Pig")
+        {
+            Destroy(collidedWith); // Destroy what we hit
+            int score = int.Parse(scoreGT.text);
+            score += 1;
+            scoreGT.text = score.ToString();
+        }
+        if (collidedWith.tag == "Chicken")
+        {
+            Destroy(collidedWith); // Destroy what we hit
+            int score = int.Parse(scoreGT.text);
+            score += 1;
+            scoreGT.text = score.ToString();
+        }
+        if (collidedWith.tag == "Fish")
+        {
+            Destroy(collidedWith); // Destroy what we hit
+            int score = int.Parse(scoreGT.text);
+            score += 2;
+            scoreGT.text = score.ToString();
+        }
+    }
 }
+
