@@ -114,6 +114,14 @@ PrefabInstance:
       propertyPath: MinDistance
       value: 42.366943
       objectReference: {fileID: 0}
+    - target: {fileID: 8233152, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233152, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9915dbb891b82452ea71e6c13d865f5e, type: 3}
     - target: {fileID: 11423888, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
       propertyPath: m_Enabled
       value: 0
