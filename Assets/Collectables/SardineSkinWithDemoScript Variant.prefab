@@ -1,5 +1,48 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &323866344024412862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8953598513239280207}
+  - component: {fileID: 5947217769740811333}
+  m_Layer: 0
+  m_Name: SelectHalo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8953598513239280207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323866344024412862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8317768771096822581}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!122 &5947217769740811333
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323866344024412862}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294931968
+  m_Size: 6
 --- !u!1001 &8317768771097202293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9,7 +52,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 159700, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
       propertyPath: m_Name
-      value: SardineSkinWithDemoScript
+      value: SardineSkinWithDemoScript Variant
       objectReference: {fileID: 0}
     - target: {fileID: 412992, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77,3 +120,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
+--- !u!4 &8317768771096822581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 412992, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
+  m_PrefabInstance: {fileID: 8317768771097202293}
+  m_PrefabAsset: {fileID: 0}
