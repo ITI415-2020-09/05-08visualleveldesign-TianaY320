@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                print("Time Has Run Out");
+                print("Game Over");
                 timeRemaining = 0;
                 timerIsRunning = false;
             }

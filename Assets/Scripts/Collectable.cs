@@ -28,19 +28,21 @@ public class Collectable : MonoBehaviour
 
     void Start()
     {
-        GameObject scoreGO = GameObject.Find("Score");
+        GameObject scoreGO = GameObject.Find("ScoreCounter");
         scoreGT = scoreGO.GetComponent<Text>();
         scoreGT.text = "0";
     }
 
     void OnCollisionEnter(Collision coll)
     {
+
         GameObject collidedWith = coll.gameObject;
+
         if (collidedWith.tag == "Cow")
         {
             Destroy(collidedWith); // Destroy what we hit
             int score = int.Parse(scoreGT.text);
-            score += 1;
+            score += 10;
             scoreGT.text = score.ToString();
         }
 
@@ -48,21 +50,21 @@ public class Collectable : MonoBehaviour
         {
             Destroy(collidedWith); // Destroy what we hit
             int score = int.Parse(scoreGT.text);
-            score += 1;
+            score += 10;
             scoreGT.text = score.ToString();
         }
         if (collidedWith.tag == "Chicken")
         {
             Destroy(collidedWith); // Destroy what we hit
             int score = int.Parse(scoreGT.text);
-            score += 1;
+            score += 10;
             scoreGT.text = score.ToString();
         }
         if (collidedWith.tag == "Fish")
         {
             Destroy(collidedWith); // Destroy what we hit
             int score = int.Parse(scoreGT.text);
-            score += 2;
+            score += 20;
             scoreGT.text = score.ToString();
         }
     }
