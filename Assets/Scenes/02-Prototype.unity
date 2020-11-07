@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baff0ca1dda781c4bb6a1161c667324a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 30
+  timeRemaining: 300
   timerIsRunning: 0
   timeText: {fileID: 63600440}
 --- !u!1001 &94344709
@@ -4482,7 +4482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49959886a7724734c832abbc149075e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashSound: {fileID: 0}
+  splashSound: {fileID: 8300000, guid: 05e6238f890767641b0d89b8f2cdcb91, type: 3}
   audioS: {fileID: 1354661265}
 --- !u!114 &1354661271
 MonoBehaviour:
@@ -5150,7 +5150,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 103
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5188,7 +5188,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
