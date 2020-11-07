@@ -5,10 +5,18 @@ using UnityEngine.UI;
 
 public class Collectable : MonoBehaviour
 {
-
-    [Header("Set Dynamically")]
+    
     public Text scoreGT;
+    [Header("Set Dynamically")]
+   
     public GameObject selectHalo;
+
+    void Start()
+    {
+        GameObject scoreGO = GameObject.Find("FoodCounter");
+        scoreGT = scoreGO.GetComponent<Text>();
+        scoreGT.text = "0";
+    }
 
     void Awake()
     {
@@ -26,13 +34,6 @@ public class Collectable : MonoBehaviour
         selectHalo.SetActive(false);
     }
 
-    void Start()
-    {
-        GameObject scoreGO = GameObject.Find("ScoreCounter");
-        scoreGT = scoreGO.GetComponent<Text>();
-        scoreGT.text = "0";
-    }
-
     void OnCollisionEnter(Collision coll)
     {
 
@@ -45,7 +46,6 @@ public class Collectable : MonoBehaviour
             score += 10;
             scoreGT.text = score.ToString();
         }
-
         if (collidedWith.tag == "Pig")
         {
             Destroy(collidedWith); // Destroy what we hit
@@ -67,6 +67,7 @@ public class Collectable : MonoBehaviour
             score += 20;
             scoreGT.text = score.ToString();
         }
+
     }
 }
 
