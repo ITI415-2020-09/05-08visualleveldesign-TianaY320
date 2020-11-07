@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                print("Game Over");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 timeRemaining = 0;
                 timerIsRunning = false;
             }

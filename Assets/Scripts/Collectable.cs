@@ -45,6 +45,10 @@ public class Collectable : MonoBehaviour
             int score = int.Parse(scoreGT.text);
             score += 10;
             scoreGT.text = score.ToString();
+            if (score > HighScore.score)
+            {
+                HighScore.score = score;
+            }
         }
         if (collidedWith.tag == "Pig")
         {
@@ -52,6 +56,10 @@ public class Collectable : MonoBehaviour
             int score = int.Parse(scoreGT.text);
             score += 10;
             scoreGT.text = score.ToString();
+            if (score > HighScore.score)
+            {
+                HighScore.score = score;
+            }
         }
         if (collidedWith.tag == "Chicken")
         {
@@ -59,6 +67,10 @@ public class Collectable : MonoBehaviour
             int score = int.Parse(scoreGT.text);
             score += 10;
             scoreGT.text = score.ToString();
+            if (score > HighScore.score)
+            {
+                HighScore.score = score;
+            }
         }
         if (collidedWith.tag == "Fish")
         {
@@ -66,6 +78,10 @@ public class Collectable : MonoBehaviour
             int score = int.Parse(scoreGT.text);
             score += 20;
             scoreGT.text = score.ToString();
+            if (score > HighScore.score)
+            {
+                HighScore.score = score;
+            }
         }
 
     }
